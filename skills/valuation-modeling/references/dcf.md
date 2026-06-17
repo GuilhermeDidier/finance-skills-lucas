@@ -62,6 +62,12 @@ Terminal Value(ano N) = FCF_N × (1 + g) / (r − g)
 - **Limites de g:** evite g acima do crescimento dos últimos anos do forecast. >6% nominal (crescimento de longo prazo da economia) é geralmente insustentável.
 - **R−g é decisivo:** se r=10% e g=5%, o múltiplo implícito de FCF é 20x. Juros baixos → TVs enormes.
 
+### Calibrar g (e exit multiple) em mercados de juro alto — Brasil/EM
+Em moedas com inflação alta (BRL), tudo é **nominal**: o g terminal precisa ser nominal e o WACC também (consistência de moeda — ver `wacc-capm.md`).
+- **Âncora do g nominal** = inflação de longo prazo + crescimento real do PIB. Ex.: Brasil ≈ meta de inflação ~3% + PIB real ~2% ⇒ **g nominal ~5%** como ponto de partida (vs ~3–4% nos EUA). Empresa boa pode crescer acima do PIB no explícito, mas converge na perpetuidade.
+- **Cuidado com o spread WACC−g:** com WACC ~15% (típico no Brasil), o TV fica **muito sensível** a g. 1 p.p. em g move o valor de forma desproporcional — por isso **sempre sensibilize** WACC × g numa tabela 2-D e mostre a faixa, nunca um ponto.
+- **Cross-check obrigatório dos dois métodos:** em juro alto, perpetuidade e exit multiple costumam **divergir bastante**. Calcule o g implícito pelo seu exit multiple (fórmula de equivalência abaixo) — se ele sair acima da âncora nominal (~5–6%), o exit está agressivo; se a perpetuidade implicar um múltiplo bem abaixo dos comps, está conservadora. Triangule para o meio e explique a premissa.
+
 ### Equivalência entre os dois (sanity check obrigatório)
 ```
 g implícito (a partir do exit multiple) = [(WACC × TV_n) − FCF_n] / [FCF_n + TV_n]
