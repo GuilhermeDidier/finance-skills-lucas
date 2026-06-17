@@ -24,7 +24,7 @@ Para desinstalar: `./install.sh --uninstall`.
 
 | Skill | O que faz | Quando usar |
 |-------|-----------|-------------|
-| _(em construção)_ | | |
+| `valuation-modeling` | Valuation completo (DCF, trading/transaction comps, sum-of-the-parts) e triangulação em football field | "quanto vale", DCF, WACC, múltiplos, terminal value, valor por ação |
 
 ## Como criar uma nova skill
 
