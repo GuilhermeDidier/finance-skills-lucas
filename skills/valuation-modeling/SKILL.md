@@ -68,7 +68,10 @@ Junte as faixas (min–max) de cada metodologia num gráfico de barras horizonta
 
 Sempre declare as premissas explicitamente e prefira faixas a pontos.
 
+> 💡 Para um caso completo de referência (mecânica → DCF → comps → football field, com toda a aritmética fechando), veja `references/worked-example.md`.
+
 ## Documentos de apoio
+- `references/worked-example.md` — caso end-to-end "ExemploCo" amarrando tudo, com sanity checks (equivalência TV, ROIIC) e football field.
 - `references/mechanics.md` — grunt work: fully diluted shares (TSM, if-converted, NSS), EV bridge, LTM, calendarização, scrubbing de não-recorrentes, nota IFRS 16.
 - `references/dcf.md` — DCF completo: UFCF, terminal value (ambos métodos), equivalência, ROIIC, ajustes, sum-of-the-parts, sinergias, sensibilidade.
 - `references/wacc-capm.md` — WACC, CAPM, cost of debt/equity, beta delever/relever; camada avançada (target structure, size premium, country risk premium, predicted beta, sensibilização) e exemplos trabalhados.
