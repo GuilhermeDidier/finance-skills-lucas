@@ -1,6 +1,6 @@
 ---
 name: mna-modeling
-description: Modela fusões e aquisições — merger model, análise de accretion/dilution de EPS, purchase price e mix cash/debt/stock, purchase accounting (goodwill, write-ups, DTL), sinergias, e estrutura/processo do deal (sell-side, buy-side, taxable vs tax-free). Use quando o usuário quiser avaliar uma aquisição, montar um merger model, checar se um deal é accretive ou dilutive, definir o financiamento (cash/debt/stock), calcular goodwill e nova D&A, valorar sinergias, ou entender estrutura/processo de M&A. Gatilhos: "M&A", "merger", "aquisição", "accretion", "dilution", "merger model", "accretive", "dilutive", "goodwill", "sinergias", "purchase accounting", "exchange ratio", "sources and uses", "premium de controle".
+description: Modela fusões e aquisições — merger model, análise de accretion/dilution de EPS, purchase price e mix cash/debt/stock, purchase accounting (goodwill, write-ups, DTL), sinergias, e estrutura/processo do deal (sell-side, buy-side, taxable vs tax-free). Use quando o usuário quiser avaliar uma aquisição, montar um merger model, checar se um deal é accretive ou dilutive, definir o financiamento (cash/debt/stock), calcular goodwill e nova D&A, valorar sinergias, ou entender estrutura/processo de M&A. Gatilhos: "M&A", "merger", "aquisição", "accretion", "dilution", "merger model", "accretive", "dilutive", "goodwill", "sinergias", "purchase accounting", "exchange ratio", "collar", "contribution analysis", "poison pill", "takeover defense", "white knight", "sources and uses", "premium de controle".
 ---
 
 # M&A Modeling
@@ -62,4 +62,5 @@ Sempre mostre as premissas e sensibilize preço/sinergias.
 - `references/purchase-accounting.md` — goodwill, write-ups, DTL, nova D&A; stock vs asset, step-up, Section 338, taxable vs tax-free.
 - `references/synergies.md` — revenue vs cost synergies, valoração, phase-in, custos de integração, disciplina.
 - `references/deal-process-structure.md` — strategic vs financial buyer, sell-side/buy-side, etapas (NDA→LOI→DD→SPA→closing), estruturas legais, alocação de risco.
+- `references/advanced-analyses.md` — contribution analysis, exchange ratios e collars (fixed/floating), como EV/equity mudam no M&A, e takeover defenses (poison pill flip-in/flip-over, staggered board, white knight).
 - `references/worked-example.md` — caso A compra B com accretion/dilution calculado (atalho + pro forma EPS) e a variante 100% stock.

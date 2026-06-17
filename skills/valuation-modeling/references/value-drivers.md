@@ -53,5 +53,5 @@ Value = Invested Capital inicial + PV(Economic Profit projetado)
 ## Como usar isto no valuation (lente prática)
 1. Antes do DCF, calcule **ROIC histórico vs WACC** — a empresa cria ou destrói valor hoje?
 2. Decomponha o forecast em **crescimento × ROIC** (não só "receita sobe X%"). Cheque a consistência (reinvestimento = g/ROIC).
-3. No terminal value, use a value driver formula para ver o **ROIC implícito** — se for muito acima do WACC pra sempre, exige moat (ver skill corporate-finance / Measuring the Moat).
+3. No terminal value, use a value driver formula para ver o **ROIC implícito** — se for muito acima do WACC pra sempre, exige moat (ver `moat.md`).
 4. Ao usar múltiplos, lembre que está embutindo premissas de ROIC/g/WACC dos peers — explicite-as.
