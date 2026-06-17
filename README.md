@@ -27,6 +27,7 @@ Para desinstalar: `./install.sh --uninstall`.
 | `valuation-modeling` | Valuation completo (DCF, trading/transaction comps, sum-of-the-parts) e triangulação em football field | "quanto vale", DCF, WACC, múltiplos, terminal value, valor por ação |
 | `financial-modeling` | Modelo de 3 demonstrações integrado (DRE/Balanço/DFC), schedules, circularidade, cenários e qualidade dos lucros | "modelo financeiro", "3-statement", projeção, working capital, debt schedule, "o balanço não fecha" |
 | `mna-modeling` | Merger model, accretion/dilution, purchase accounting (goodwill/write-ups/DTL), sinergias e estrutura de deal | "M&A", merger, accretion, dilution, goodwill, sinergias, mix cash/debt/stock |
+| `lbo-modeling` | Leveraged buyout: financiamento por tranches, debt schedule, IRR/MOIC, 3 motores de retorno, preço-máximo (floor) | "LBO", buyout, private equity, sponsor, IRR, MOIC, alavancagem |
 
 ## Como criar uma nova skill
 

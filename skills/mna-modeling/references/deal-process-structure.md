@@ -7,7 +7,7 @@
 |---|---|---|
 | Motivação | Sinergias, posição de mercado, tecnologia | Retorno (IRR/MOIC) via alavancagem e melhoria operacional |
 | Pode pagar mais por | Sinergias | Geralmente menos (sem sinergias; limitado pelo IRR-alvo) |
-| Define | Teto via valor estratégico | **Floor** de valuation (LBO: máximo que paga p/ atingir o IRR) |
+| Define | Teto via valor estratégico | **Floor** de valuation (LBO: máximo que paga p/ atingir o IRR) → skill lbo-modeling |
 | Horizonte | Permanente | 3–7 anos (exit) |
 
 ## Sell-side: os dois caminhos

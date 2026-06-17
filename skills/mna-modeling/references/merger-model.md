@@ -38,4 +38,4 @@ Toda transação tem que **balancear fontes = usos**:
 ## Conexão com outras skills
 - O 3-statement de cada empresa vem da skill **financial-modeling**.
 - A confirmação do preço (DCF/comps) vem da **valuation-modeling**.
-- Comprador **financial sponsor** (PE) → o teto que ele paga é dado pela análise de **LBO** (define o "floor" de valuation; ver `purchase-accounting.md` e a skill valuation-modeling).
+- Comprador **financial sponsor** (PE) → o teto que ele paga é dado pela análise de **LBO** (define o "floor" de valuation) → ver skill **lbo-modeling**.

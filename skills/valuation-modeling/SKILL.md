@@ -55,7 +55,7 @@ Selecione 1–2 comps realmente bons (mesma natureza de negócio). Antes de calc
 Transações de M&A na indústria (janela ~5 anos). Captura control premium. **Não use fora desse contexto.**
 
 ### Passo 4.5 — LBO como "floor" (quando relevante)
-Em situações de sponsor/take-private, a análise de LBO define um **piso de valuation** (o máximo que um financial sponsor pagaria para atingir o IRR-alvo). Detalhe → skill de m&a-modeling/LBO; aqui entra como uma das faixas do football field quando aplicável.
+Em situações de sponsor/take-private, a análise de LBO define um **piso de valuation** (o máximo que um financial sponsor pagaria para atingir o IRR-alvo). Detalhe → skill **lbo-modeling**; aqui entra como uma das faixas do football field quando aplicável.
 
 ### Passo 5 — Triangular e montar o Football Field
 Junte as faixas (min–max) de cada metodologia num gráfico de barras horizontais, com o preço atual como referência. Calcule os **múltiplos implícitos** de cada faixa para checar razoabilidade. Conclua com uma faixa de valor defensável e o raciocínio.
