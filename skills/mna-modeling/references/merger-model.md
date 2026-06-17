@@ -35,6 +35,13 @@ Toda transação tem que **balancear fontes = usos**:
 - Combined Net Income = Combined Pre-Tax Income × (1 − tax rate do **comprador**) — padrão (alvo vira subsidiária). Na vida real pode diferir (jurisdições).
 - Ações emitidas = Purchase Equity Value × %Stock / preço do comprador. As **ações do Seller somem**.
 
+## Pitfalls comuns no merger model (Credit Suisse Handbook)
+- **Calendarização:** buyer e target no **mesmo ano-calendário** (geralmente o do comprador) para consolidar like-for-like.
+- **Moeda:** mesma moeda (a do comprador); spot rate em geral, mas **forward rates** por ano para análise mais precisa.
+- **Goodwill:** calculado sobre o nº de ações **fully diluted real** (não weighted average); não amortiza (impairment anual); em stock deal geralmente **não é dedutível** (cheque a jurisdição); é **reduzido** pelo write-up de ativos/intangíveis (que depois depreciam).
+- **Custos de financiamento:** custo da nova dívida depende do **rating da entidade combinada**; cheque **change-of-control provisions** nos bonds/facilities do alvo (podem exigir refinanciamento); fees de advisory/financing, se expensados no ano, são **exceptional** e saem do cálculo de EPS.
+- **Opções e dilutivos:** entram no equity purchase price (TSM); converts como dívida ou equity conforme o caso; trate roll-over/liquidação.
+
 ## Conexão com outras skills
 - O 3-statement de cada empresa vem da skill **financial-modeling**.
 - A confirmação do preço (DCF/comps) vem da **valuation-modeling**.

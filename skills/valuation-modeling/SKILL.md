@@ -81,3 +81,4 @@ Sempre declare as premissas explicitamente e prefira faixas a pontos.
 - `references/value-drivers.md` — criação de valor (ROIC × crescimento), value driver formula, economic profit (EVA), conservation of value, o que os múltiplos escondem. (McKinsey/Koller + Mauboussin)
 - `references/growth-and-emerging-markets.md` — valuar alto crescimento/jovens/sem-lucro/intangível e mercados emergentes; country risk premium e consistência de moeda. (Damodaran)
 - `references/moat.md` — sustentabilidade do ROIC (spread ROIC−WACC), competitive advantage period, Five Forces, barreiras de entrada, WTP/WTS e checklist — justifica (ou não) o ROIIC/CAP do terminal value. (Mauboussin, Measuring the Moat)
+- `references/pitfalls-and-football-field.md` — checklist de pitfalls de comps, "red lights" de sanidade, e como montar o football field (com exemplo real e múltiplos implícitos). (Credit Suisse Handbook)

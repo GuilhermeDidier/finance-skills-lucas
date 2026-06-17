@@ -37,4 +37,21 @@
 3. Cheque a **tendência de DSO, DIH e capitalização** — se pioram, ajuste as premissas para o nível "real", não o reportado.
 4. Só então projete. Documente cada ajuste (rastreabilidade).
 
-> 🔗 Conecta com o scrubbing em `../valuation-modeling/references/mechanics.md` e com a análise de earnings da skill `earnings`.
+## Toolkit de detecção (o processo de Schilit)
+Onde e como caçar os shenanigans, de forma sistemática:
+1. **Compare net income vs CFO** ano a ano — a divergência persistente é o sinal #1 (lucro é mais fácil de manipular que caixa).
+2. **Trend analysis de ratios:** margens, DSO, DIH, capitalização/ativos — mudanças súbitas sem causa operacional = bandeira.
+3. **Leia os footnotes e o MD&A** linha por linha — políticas contábeis, mudanças de estimativa (vida útil, reservas), reconhecimento de receita.
+4. **Cheque a seção de receita "outra"/não-operacional** e ganhos de venda de ativos inflando o topo.
+5. **Related-party transactions** — vendas/compras com partes ligadas (round-tripping).
+6. **Sinais de governança:** troca de auditor, opinião com ressalva, restatements, saída de CFO, fraqueza de internal controls (SOX 404).
+7. **Reserva ("cookie jar"):** big baths e reversões de provisão que suavizam o lucro — olhe a volatilidade artificialmente baixa.
+
+## Lições dos casos (Schilit)
+- **Cendant/CUC:** inflou operating income por >12 anos (receita fictícia + reservas) — divergência NI vs caixa e aquisições para esconder.
+- **Waste Management:** estendeu vidas úteis e subdepreciou (categoria 4 — empurrar despesa pra frente).
+- **Sunbeam:** "bill and hold" e channel stuffing (categoria 1 — receita cedo demais).
+- **MicroStrategy / "New Economy":** reconhecimento agressivo de receita de software/contratos longos.
+- Lição comum: os números **denunciavam** antes do colapso — quem leu CFO vs NI e DSO viu.
+
+> 🔗 Conecta com o scrubbing em `../valuation-modeling/references/mechanics.md`, com os pitfalls de comps em `../valuation-modeling/references/pitfalls-and-football-field.md`, e com a análise de earnings da skill `earnings`.
