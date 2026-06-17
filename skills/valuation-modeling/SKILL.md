@@ -14,6 +14,8 @@ Skill para conduzir um valuation completo no padrão de banco de investimento. O
 - Definir WACC, cost of equity (CAPM), beta, terminal value.
 - Sanity-check de um valuation existente (checar premissas implícitas, ROIIC, g).
 - Montar o **football field** (resumo visual das faixas por metodologia).
+- Valuar empresas **difíceis**: alto crescimento, jovens, prejuízo, tech/intangível pesado, ou em **mercado emergente/Brasil** (ver `references/growth-and-emerging-markets.md`).
+- Decompor criação de valor (**ROIC × crescimento**, economic profit) e entender o que um múltiplo embute (ver `references/value-drivers.md`).
 
 **Quando NÃO usar:** modelagem de fusão/accretion-dilution → skill de m&a-modeling; construção do 3-statement model → skill de financial-modeling.
 
@@ -38,13 +40,13 @@ Fixe a base antes de qualquer múltiplo (ver `references/mechanics.md`):
 
 ### Passo 2 — DCF (técnica primária na maioria dos casos)
 Siga o processo de 5 passos e use as fórmulas de `references/dcf.md` e `references/wacc-capm.md`:
-1. Projete o **UFCF** (5–10 anos). Se o forecast cresce rápido, considere horizonte mais longo (o cliff problem).
+1. Projete o **UFCF** (5–10 anos). **Decomponha o crescimento em ROIC × investment rate** (não só "receita +X%") e cheque se a empresa cria valor hoje (ROIC vs WACC) — ver `references/value-drivers.md`. Se o forecast cresce rápido, considere horizonte mais longo (cliff problem). **Empresa de alto crescimento/jovem/sem lucro:** use o caminho receita → margem-alvo → sales-to-capital de `references/growth-and-emerging-markets.md`.
 2. Calcule o **WACC** sobre a **estrutura de capital-alvo** (não a atual por default). CAPM para re; delever/relever beta a partir de comps; some **size premium** (small/mid cap) e **country risk premium** se for EM/Brasil. **Consistência de moeda:** FCF e WACC na mesma moeda.
 3. **Terminal value** pelos dois métodos (exit multiple **e** perpetuidade) e **cheque a equivalência** (g implícito vs múltiplo implícito).
 4. **Present value** (use mid-year convention quando fizer sentido).
 5. **Ajustes** → EV para equity value → valor por ação (diluído).
 6. **Rode sensibilidade** (tabela 2-D) em vendas, margens, WACC e terminal value.
-7. **Cheque o ROIIC** — se ROIIC implícito >> WACC, as premissas estão furadas. Este passo é obrigatório.
+7. **Cheque o ROIIC / value driver formula** — se o ROIC implícito no terminal value >> WACC para sempre, exige moat; senão as premissas estão furadas. Cross-check com economic profit (`value-drivers.md`). Este passo é obrigatório.
 
 ### Passo 3 — Trading Comps
 Selecione 1–2 comps realmente bons (mesma natureza de negócio). Antes de calcular múltiplos, faça a **mecânica** (ver `references/mechanics.md`): **LTM** (prior FY + current stub − prior stub), **calendarização** ao mesmo CY end, e **scrubbing** dos não-recorrentes (Adjusted EBITDA/EBIT/EPS). Só então calcule EV/EBITDA, EV/EBIT, P/E, PEG (forward) e impute valor.
@@ -73,6 +75,8 @@ Sempre declare as premissas explicitamente e prefira faixas a pontos.
 ## Documentos de apoio
 - `references/worked-example.md` — caso end-to-end "ExemploCo" amarrando tudo, com sanity checks (equivalência TV, ROIIC) e football field.
 - `references/mechanics.md` — grunt work: fully diluted shares (TSM, if-converted, NSS), EV bridge, LTM, calendarização, scrubbing de não-recorrentes, nota IFRS 16.
-- `references/dcf.md` — DCF completo: UFCF, terminal value (ambos métodos), equivalência, ROIIC, ajustes, sum-of-the-parts, sinergias, sensibilidade.
-- `references/wacc-capm.md` — WACC, CAPM, cost of debt/equity, beta delever/relever; camada avançada (target structure, size premium, country risk premium, predicted beta, sensibilização) e exemplos trabalhados.
-- `references/comparables.md` — EV vs equity, trading comps, transaction comps, múltiplos, imputação de valores e múltiplos, minority interest.
+- `references/dcf.md` — DCF completo: UFCF, terminal value (ambos métodos), equivalência, ROIIC, ajustes, sum-of-the-parts, sinergias, sensibilidade, calibração de g em juro alto/BRL.
+- `references/wacc-capm.md` — WACC, CAPM, cost of debt/equity, beta delever/relever; camada avançada (target structure, size premium, country risk premium Damodaran, predicted beta, sensibilização).
+- `references/comparables.md` — EV vs equity, trading & transaction comps, múltiplos, imputação, minority interest, múltiplos como atalho de DCF + intangíveis (Mauboussin).
+- `references/value-drivers.md` — criação de valor (ROIC × crescimento), value driver formula, economic profit (EVA), conservation of value, o que os múltiplos escondem. (McKinsey/Koller + Mauboussin)
+- `references/growth-and-emerging-markets.md` — valuar alto crescimento/jovens/sem-lucro/intangível e mercados emergentes; country risk premium e consistência de moeda. (Damodaran)

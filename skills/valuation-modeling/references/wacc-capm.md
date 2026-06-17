@@ -96,13 +96,18 @@ re = rf + βL × (rm − rf) + SP
 **Duff & Phelps** publica size premia por decis de market cap. Use para mid/small caps.
 
 ### Country Risk Premium (CRP) — mercados emergentes (ex.: Brasil)
-Para valuation de empresas em EM, adicione um prêmio de risco-país ao cost of equity:
+Para valuation de empresas em EM, adicione um prêmio de risco-país ao cost of equity (método Damodaran):
 ```
-re = rf(US) + βL × (ERP maduro) + CRP    (abordagem Damodaran)
-   CRP ≈ default spread soberano × (σ_equity / σ_bond)
+CRP = Default Spread soberano × (σ_equity / σ_government bond)
+re  = rf + βL × ERP(mercado maduro) + λ × CRP
 ```
-- Use o T-bond US como rf "global" + ERP de mercado maduro + CRP, **ou** o rf local (NTN-B/Treasury local) com cuidado pra não duplicar risco.
-- Atenção a **moeda**: desconte FCF em BRL com WACC em BRL (inclua diferencial de inflação), ou FCF em USD com WACC em USD. **Nunca misture.**
+- **Default spread:** do rating soberano (ou CDS) sobre o Treasury US.
+- **σ_equity / σ_bond:** volatilidade relativa do mercado de ações local vs títulos locais.
+- **λ (lambda):** exposição da empresa específica ao risco-país (exportadora pura → λ < 1; 100% doméstica → λ ≈ 1). Refina por empresa.
+- **Exemplo (Índia):** spread Ba2 ~3,0%; σ_equity 31,82% / σ_bond 14,90% → CRP = 3,0% × 2,135 = **6,43%**; com ERP maduro ~4% → ERP total ≈ 10,4%.
+- Alternativa: usar rf local (NTN-B) que já embute risco-país e inflação — **sem somar CRP de novo** (não duplique).
+- **Moeda:** FCF em BRL com WACC em BRL (rf via NTN-B), ou FCF em USD com WACC em USD + CRP. **Nunca misture.** Converta moedas por diferencial de inflação, não câmbio spot.
+- Detalhe e framework de crescimento/EM → `growth-and-emerging-markets.md`.
 
 ### Sensibilizar o WACC
 Dado o número de premissas e o impacto enorme na valuation, **sensibilize** os inputs do WACC para produzir um **range**, cruzado com outros inputs (ex.: exit multiple) numa tabela de sensibilidade 2-D.

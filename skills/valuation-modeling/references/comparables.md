@@ -67,6 +67,14 @@ Sales:  (múltiplo × Target Sales − Net Debt) / Shares
 ### Multiplos forward — timing
 Investidores rolam o ano-base na primavera. Ex.: por maio/2007 já olham Preço/EPS 2008. Use o ano que o mercado está precificando.
 
+### Múltiplos são atalho de DCF (Mauboussin)
+Todo múltiplo é **taquigrafia de um DCF**: por trás de um P/E ou EV/EBITDA estão **ROIC, crescimento e custo de capital** (ver `value-drivers.md`). Implicações práticas:
+- Usar múltiplo sem entender esses drivers = terceirizar julgamento pro mercado. Sempre explicite o que o múltiplo dos peers embute.
+- **Múltiplos altos costumam preceder retornos abaixo da média** no longo prazo (reversão à média) — mas podem refletir, racionalmente, criação de valor. Não é mecânico.
+- **Intangíveis distorcem:** quem investe pesado em P&D/marca (tech, farma) joga o investimento em despesa, deprime o lucro e **infla o múltiplo**. Ajustar por investimento em intangível muda muito a leitura.
+  - *Microsoft FY2023:* P/E 34,9 → **30,5x** e EV/EBITDA 24,2 → **16,9x** após ajuste por intangível. Diferenças materiais.
+- **Combine P/E e EV/EBITDA:** divergência entre empresas parecidas geralmente é **alavancagem** (P/E é alavancado; EV/EBITDA não) ou itens não-operacionais. A divergência é informação — investigue.
+
 ### Trading Comps × DCF (prós e contras)
 | | Prós | Contras |
 |---|---|---|
