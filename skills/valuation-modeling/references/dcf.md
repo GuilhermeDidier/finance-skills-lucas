@@ -99,7 +99,7 @@ PV = Σ  UFCF_t / (1 + r)^(t − 0.5)
 - **Minority interest** → subtraia.
 - **Real estate ocioso / ativos redundantes** → some.
 - **Operações deficitárias** → avalie separado (incluir no DCF dá valor negativo implícito).
-- **Operating leases** (relevante p/ varejo): capitalize (≈ 8× a despesa anual de aluguel) e trate como dívida; some o aluguel ao EBITDA → EBITDAR.
+- **Operating leases** (relevante p/ varejo, cias aéreas): sob **IFRS 16 / ASC 842 (2019+)** os leases já estão no balanço como **lease liability** — use esse valor como debt-like (a velha regra de "8× o aluguel anual" só vale para reportantes/anos pré-2019 ou comparação histórica). Padronize os comps via **EBITDAR** quando misturar empresas sob padrões diferentes.
 
 ```
 Equity Value = Enterprise Value − Net Debt (+ ajustes acima)

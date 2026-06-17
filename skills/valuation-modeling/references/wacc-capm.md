@@ -65,6 +65,48 @@ Procedimento p/ empresa privada ou beta suspeito:
 
 > ⚠️ **CAPM sob crítica:** Fama-French (2004) mostraram que, no longo prazo, praticamente não há relação entre beta e retorno; CAPM subestima retorno de ações de beta baixo e superestima de beta alto. Use, mas com ceticismo e sensibilidade.
 
+## Camada avançada (banker-grade — Rosenbaum & Pearl, Cap. 3)
+
+### Target capital structure (não a atual, necessariamente)
+O WACC é calculado sobre uma **estrutura de capital-alvo** consistente com a estratégia de longo prazo (D/(D+E) e E/(D+E)), **não** automaticamente a atual:
+- Examine a estrutura atual e histórica da empresa e a **média/mediana dos comparáveis**.
+- Empresa pública já no alvo → use a atual. Privada → use mediana dos comps.
+- Escolhido o alvo, assume-se constante por todo o período de projeção.
+
+**Optimal capital structure:** conforme se adiciona dívida (mais barata, pós-imposto), o WACC **cai** até o ponto ótimo; depois disso o risco de inadimplência encarece dívida E equity e o WACC volta a **subir**. Sem dívida, WACC = cost of equity.
+
+### Risk-free rate — convenções de mercado
+- Teoria: o instrumento risk-free mais longo (casar com going-concern).
+- Prática: maioria usa o **10-year U.S. Treasury** (profundidade/liquidez). **Duff & Phelps** usa yield interpolado de **20 anos**.
+
+### Market risk premium
+- Wall Street tipicamente **5%–8%**; Duff & Phelps calcula ~**7%** (série desde 1926, média **aritmética**).
+- Muitos bancos têm **política firm-wide** de MRP pra consistência entre projetos. Consulte o sênior/prática da casa.
+
+### Beta — histórico vs preditivo
+- Histórico: Bloomberg (`Ticker <Equity> BETA <GO>`), FactSet, Refinitiv. Janela 2–5 anos.
+- Retornos passados podem não prever o futuro → muitos preferem **predicted beta** (ex.: **MSCI Barra**, forward-looking, modelo multifator).
+- Empresa privada / fora do alvo: desalavanque betas dos comps, tire a **média** (pode ser ponderada por market cap), re-alavanque no D/E-alvo.
+
+### Size Premium (SP) — companhias menores
+Evidência empírica: empresas menores são mais arriscadas e o beta não captura tudo (baixo volume → covariância imprecisa). Adicione um prêmio de tamanho ao CAPM:
+```
+re = rf + βL × (rm − rf) + SP
+```
+**Duff & Phelps** publica size premia por decis de market cap. Use para mid/small caps.
+
+### Country Risk Premium (CRP) — mercados emergentes (ex.: Brasil)
+Para valuation de empresas em EM, adicione um prêmio de risco-país ao cost of equity:
+```
+re = rf(US) + βL × (ERP maduro) + CRP    (abordagem Damodaran)
+   CRP ≈ default spread soberano × (σ_equity / σ_bond)
+```
+- Use o T-bond US como rf "global" + ERP de mercado maduro + CRP, **ou** o rf local (NTN-B/Treasury local) com cuidado pra não duplicar risco.
+- Atenção a **moeda**: desconte FCF em BRL com WACC em BRL (inclua diferencial de inflação), ou FCF em USD com WACC em USD. **Nunca misture.**
+
+### Sensibilizar o WACC
+Dado o número de premissas e o impacto enorme na valuation, **sensibilize** os inputs do WACC para produzir um **range**, cruzado com outros inputs (ex.: exit multiple) numa tabela de sensibilidade 2-D.
+
 ## Exemplo trabalhado (Black Mountain Beer)
 **Cost of equity:** β=1.2, rf=6%, ERP=7.5% → re = 6% + 1.2×7.5% = **15%**.
 

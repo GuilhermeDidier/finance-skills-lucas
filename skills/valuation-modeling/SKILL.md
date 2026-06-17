@@ -30,24 +30,30 @@ Skill para conduzir um valuation completo no padrão de banco de investimento. O
 ### Passo 0 — Enquadrar
 Pergunte/defina: **qual o propósito?** (M&A, IPO, fairness opinion, decisão de investimento). Isso decide o peso das metodologias e se transaction comps são aplicáveis. Colete: financials (3–5 anos históricos + projeções), capital structure, shares (diluídas), net debt, setor e comparáveis candidatos.
 
-### Passo 1 — Equity Value vs Enterprise Value
-Fixe a base antes de qualquer múltiplo. Ver `references/comparables.md` (seção EV vs Equity). Regra de coerência: múltiplo com EV no numerador exige métrica antes de juros embaixo.
+### Passo 1 — Mecânica: Equity Value, Fully Diluted Shares e EV
+Fixe a base antes de qualquer múltiplo (ver `references/mechanics.md`):
+- **Fully diluted shares:** basic + opções/warrants in-the-money via **TSM** + converts in-the-money (if-converted ou NSS). Não pule isso.
+- **Enterprise Value bridge:** Equity + Total Debt + Preferred + Minority Interest − Excess Cash (+ pensão/leases debt-like).
+- **Regra de coerência:** múltiplo com EV no numerador exige métrica pré-juros embaixo (Sales/EBITDA/EBIT); equity value usa pós-juros (Net Income/EPS).
 
 ### Passo 2 — DCF (técnica primária na maioria dos casos)
 Siga o processo de 5 passos e use as fórmulas de `references/dcf.md` e `references/wacc-capm.md`:
 1. Projete o **UFCF** (5–10 anos). Se o forecast cresce rápido, considere horizonte mais longo (o cliff problem).
-2. Calcule o **WACC** (CAPM para re; delever/relever beta a partir de comps se preciso).
+2. Calcule o **WACC** sobre a **estrutura de capital-alvo** (não a atual por default). CAPM para re; delever/relever beta a partir de comps; some **size premium** (small/mid cap) e **country risk premium** se for EM/Brasil. **Consistência de moeda:** FCF e WACC na mesma moeda.
 3. **Terminal value** pelos dois métodos (exit multiple **e** perpetuidade) e **cheque a equivalência** (g implícito vs múltiplo implícito).
 4. **Present value** (use mid-year convention quando fizer sentido).
 5. **Ajustes** → EV para equity value → valor por ação (diluído).
-6. **Rode sensibilidade** em vendas, margens, WACC e terminal value.
+6. **Rode sensibilidade** (tabela 2-D) em vendas, margens, WACC e terminal value.
 7. **Cheque o ROIIC** — se ROIIC implícito >> WACC, as premissas estão furadas. Este passo é obrigatório.
 
 ### Passo 3 — Trading Comps
-Selecione 1–2 comps realmente bons (mesma natureza de negócio). Calcule EV/EBITDA, EV/EBIT, P/E, PEG (forward). Impute valor multiplicando os resultados do alvo pelos múltiplos. Ver `references/comparables.md`.
+Selecione 1–2 comps realmente bons (mesma natureza de negócio). Antes de calcular múltiplos, faça a **mecânica** (ver `references/mechanics.md`): **LTM** (prior FY + current stub − prior stub), **calendarização** ao mesmo CY end, e **scrubbing** dos não-recorrentes (Adjusted EBITDA/EBIT/EPS). Só então calcule EV/EBITDA, EV/EBIT, P/E, PEG (forward) e impute valor.
 
 ### Passo 4 — Transaction Comps (só se for valuation para venda/aquisição)
 Transações de M&A na indústria (janela ~5 anos). Captura control premium. **Não use fora desse contexto.**
+
+### Passo 4.5 — LBO como "floor" (quando relevante)
+Em situações de sponsor/take-private, a análise de LBO define um **piso de valuation** (o máximo que um financial sponsor pagaria para atingir o IRR-alvo). Detalhe → skill de m&a-modeling/LBO; aqui entra como uma das faixas do football field quando aplicável.
 
 ### Passo 5 — Triangular e montar o Football Field
 Junte as faixas (min–max) de cada metodologia num gráfico de barras horizontais, com o preço atual como referência. Calcule os **múltiplos implícitos** de cada faixa para checar razoabilidade. Conclua com uma faixa de valor defensável e o raciocínio.
@@ -63,6 +69,7 @@ Junte as faixas (min–max) de cada metodologia num gráfico de barras horizonta
 Sempre declare as premissas explicitamente e prefira faixas a pontos.
 
 ## Documentos de apoio
+- `references/mechanics.md` — grunt work: fully diluted shares (TSM, if-converted, NSS), EV bridge, LTM, calendarização, scrubbing de não-recorrentes, nota IFRS 16.
 - `references/dcf.md` — DCF completo: UFCF, terminal value (ambos métodos), equivalência, ROIIC, ajustes, sum-of-the-parts, sinergias, sensibilidade.
-- `references/wacc-capm.md` — WACC, CAPM, cost of debt/equity, beta delever/relever, exemplos trabalhados.
+- `references/wacc-capm.md` — WACC, CAPM, cost of debt/equity, beta delever/relever; camada avançada (target structure, size premium, country risk premium, predicted beta, sensibilização) e exemplos trabalhados.
 - `references/comparables.md` — EV vs equity, trading comps, transaction comps, múltiplos, imputação de valores e múltiplos, minority interest.
