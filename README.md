@@ -31,6 +31,7 @@ Para desinstalar: `./install.sh --uninstall`.
 | `corporate-finance` | Estrutura de capital (MM), capital allocation, payout (dividendos/buybacks), criação de valor e vantagem competitiva (7 Powers) | estrutura de capital, capital allocation, dividendos, buyback, ROIC, 7 powers, Modigliani-Miller |
 | `investment-banking` | Guarda-chuva: divisões/grupos, IPO e capital markets, technicals canônicos, prep de entrevista; roteia para as skills profundas | "investment banking", IPO, ECM/DCM, pitchbook, entrevista, technicals, "o que faz um banqueiro" |
 | `bond-modeling` | Analytics de renda fixa: precificação, YTM, duration/DV01/convexidade, curva e crédito, instrumentos BR (LTN/NTN-B/CDI/DI futuro) | renda fixa, título, YTM, duration, DV01, curva de juros, LTN, NTN-B, CDI, marcação a mercado |
+| `dcm-modeling` | Mercado de dívida: instrumentos e covenants, emissão (rating/pricing/sindicação), securitização (tranches/waterfall/credit enhancement), DCM brasileiro (debênture/CRI/CRA/FIDC) | DCM, emissão de dívida, debênture, high yield, covenants, securitização, waterfall, tranche, FIDC |
 
 ## Como criar uma nova skill
 
