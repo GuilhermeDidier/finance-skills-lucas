@@ -19,6 +19,8 @@ O `install.sh` cria links das skills em `~/.claude/skills/`. Pronto — abra o C
 - **Atualizar:** `git pull` (os links já apontam para o repo, atualiza sozinho).
 - **Desinstalar:** `./install.sh --uninstall`.
 
+> 💡 **Quer turbinar?** Veja [`SETUP-EXTRAS.md`](SETUP-EXTRAS.md) para conectar o Claude a **planilhas (Excel)** e **dados reais de mercado** (brapi.dev para B3/CVM, EODHD para global). As skills dão o conhecimento; os extras dão dados e execução.
+
 ---
 
 ## 💡 Como usar
