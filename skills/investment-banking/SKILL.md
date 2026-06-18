@@ -51,5 +51,6 @@ Esta skill dá o resumo e o contexto; **mande para a skill profunda** quando o u
 - `references/overview-and-groups.md` — o que IB faz, divisões (M&A/ECM/DCM/restructuring), coverage vs product groups, sell/buy-side, players, hierarquia.
 - `references/ipo-and-capital-markets.md` — processo de IPO (bookbuilding, pricing, greenshoe, lock-up), primary vs secondary, ECM/DCM e restructuring (visão geral).
 - `references/technical-qa.md` — 3-statement linkages ($10 de depreciação), EV vs equity (current/implied, non-operating, NCI, basic/diluted), efeitos no FCFF/EV/Equity, prós-contras das metodologias, resumos de DCF/merger/LBO.
+- `references/technical-calculations-qa.md` — Q&A de cálculo (mental math): walk-throughs das 3 demonstrações (funcionário, depreciação, venda de ativo), accretion/dilution na cabeça, e LBO IRR/MOIC com rules of thumb. (400 Questions 2025 — Calculations)
 - `references/sector-valuation.md` — como a valuation muda por setor: FIG (banco/seguro: DDM, P/BV, regulatory capital), REITs (FFO/AFFO, NAV, cap rate), oil & gas (E&P NAV/EBITDAX/reserves, MLPs), utilities (rate base), tech/SaaS (ARR, Rule of 40).
 - `references/interview-and-fit.md` — fit/behavioral, "walk me through your resume", discutir deal experience, mapa de estudo técnico.
