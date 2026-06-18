@@ -33,7 +33,9 @@ F = S × (1 + r − q)^T          (discreta)
   ```
   F_câmbio = S_câmbio × (1 + i_BRL) / (1 + i_USD)
   ```
-- **Cupom cambial:** a taxa de juro **em dólar** implícita no mercado brasileiro (≈ i_BRL − variação cambial esperada). É o que um investidor em dólar ganha aplicando em reais com hedge cambial. Securato (cap. 10) deriva o cupom cambial a partir dos preços do futuro de dólar e da taxa local. Instrumento: **DDI** (cupom cambial) e **FRA de cupom** na B3.
+- **Cupom cambial:** a taxa de juro **em dólar** implícita no mercado brasileiro (≈ i_BRL − variação cambial esperada). É o que um investidor em dólar ganha aplicando em reais com hedge cambial. Securato (cap. 10) deriva o cupom a partir dos preços do futuro de dólar e da taxa local. Instrumentos na B3: **DDI** (cupom cambial), **FRC** (FRA de cupom) e **SCC** (swap cambial).
+  - **Cupom "sujo" vs "limpo":** o DDI usa a **PTAX do dia anterior** como base de conversão → no início do contrato há um "vício" (cupom sujo); o FRA de cupom (FRC) isola o cupom "limpo" entre dois vértices futuros.
+  - ⚠️ **O cupom cambial pode ser NEGATIVO** (Securato): por ser um híbrido juros+variação cambial e pela convenção da PTAX defasada, em momentos de forte oscilação cambial a taxa implícita fica negativa — racional se o ganho cambial mais que compensa o juro. (Aconteceu em jan/1999, na mudança do regime cambial.) Juro nominal "puro" nunca seria negativo; o cupom cambial sim.
 
 ## Conectar
 Opções (não-lineares) → `options.md`; swaps → `swaps.md`; hedge e contexto BR → `hedging-and-brazil.md`. A taxa livre de risco e a curva vêm da skill **bond-modeling**.

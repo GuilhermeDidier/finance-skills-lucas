@@ -52,3 +52,24 @@ A paridade fecha — call e put são consistentes.
 - Subir a **volatilidade** encarece **ambas** (call e put) — por isso straddle é aposta em vol.
 - O mesmo arcabouço precifica **opções reais** (adiar/expandir um projeto) e o **equity como call sobre os ativos** (Merton) — ver `black-scholes-greeks.md` e a skill corporate-finance.
 - No Brasil, opções sobre ações/Ibovespa são negociadas na **B3**; a IV é lida do preço de mercado (ver `black-scholes-greeks.md`).
+
+---
+
+# Exemplo 2 — Dólar futuro e cupom cambial (paridade coberta)
+**Dados:** spot R$5,00/US$ | i_BRL = 12% a.a. | i_USD = 5% a.a. | T = 1 ano.
+```
+F = S × (1 + i_BRL)/(1 + i_USD) = 5,00 × 1,12/1,05 = R$5,333/US$
+```
+- **Cupom cambial implícito** = (1 + i_BRL) × S/F − 1 = 1,12 × 5,00/5,333 − 1 = **5,0%** = i_USD ✓ (paridade coberta fecha).
+- Se o dólar futuro de mercado divergir de R$5,333 → **arbitragem** (cash-and-carry cambial).
+- Quem aplica em reais com hedge cambial trava ~5% em dólar (o cupom). Em estresse, esse cupom pode ficar negativo (ver `forwards-futures.md`).
+
+# Exemplo 3 — Valor de um Interest Rate Swap
+**Dados:** IRS de 1 ano, notional R$1.000, **recebe fixo 11%**, paga CDI. No início, swap rate justa = 11% → **valor = 0**. Depois a taxa de 1 ano sobe para **12%**.
+```
+Perna fixa     = 1.000 × 1,11 / 1,12 = R$991,07
+Perna flutuante ≈ R$1.000 (reseta ao par no CDI)
+Valor (receber fixo) = 991,07 − 1.000 = −R$8,93
+```
+- Receber fixo 11% com o mercado a 12% → recebe **abaixo** do mercado → posição vale **−R$8,93** (quem paga fixo ganha o mesmo; swap é soma-zero).
+- **Hedge:** empresa com dívida em CDI que entra **recebendo CDI / pagando fixo** trava o custo e ganha se o CDI subir. Ver `swaps.md`.
