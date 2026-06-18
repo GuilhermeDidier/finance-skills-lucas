@@ -29,6 +29,7 @@ Para desinstalar: `./install.sh --uninstall`.
 | `mna-modeling` | Merger model, accretion/dilution, purchase accounting (goodwill/write-ups/DTL), sinergias e estrutura de deal | "M&A", merger, accretion, dilution, goodwill, sinergias, mix cash/debt/stock |
 | `lbo-modeling` | Leveraged buyout: financiamento por tranches, debt schedule, IRR/MOIC, 3 motores de retorno, preço-máximo (floor) | "LBO", buyout, private equity, sponsor, IRR, MOIC, alavancagem |
 | `corporate-finance` | Estrutura de capital (MM), capital allocation, payout (dividendos/buybacks), criação de valor e vantagem competitiva (7 Powers) | estrutura de capital, capital allocation, dividendos, buyback, ROIC, 7 powers, Modigliani-Miller |
+| `investment-banking` | Guarda-chuva: divisões/grupos, IPO e capital markets, technicals canônicos, prep de entrevista; roteia para as skills profundas | "investment banking", IPO, ECM/DCM, pitchbook, entrevista, technicals, "o que faz um banqueiro" |
 
 ## Como criar uma nova skill
 
