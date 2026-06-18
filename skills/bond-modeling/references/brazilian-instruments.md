@@ -7,6 +7,19 @@
 - **CDI (DI):** taxa dos depósitos interbancários (registrados na **Cetip/B3**). Na prática, **CDI ≈ Selic over** (andam quase coladas). É o **benchmark** da renda fixa privada.
 - Convenção: anualizadas em **252 dias úteis**: `(1 + i_ano) = (1 + i_dia)^252`.
 
+### Taxa over (a convenção histórica do mercado monetário BR — Securato)
+A "taxa over" sempre se refere a **dia útil**. Tradicionalmente cotada **ao mês**, definida como **30 × a taxa efetiva por dia útil**:
+```
+taxa over ao mês (t.o.m.) = 30 × i_du        (i_du = taxa efetiva por dia útil)
+```
+- **Caminho inverso** (de over para efetiva): divida por 30 e capitalize pelos dias úteis do período:
+  ```
+  i_du = t.o.m. / 30
+  (1 + i_período) = (1 + i_du)^(du)        e        i_ano = (1 + i_du)^252 − 1
+  ```
+- **Exemplo (Securato):** aplicação de 61 dias corridos (42 dias úteis), taxa do período 1,50%. Efetiva por dia útil = (1,015)^(1/42) − 1 = 0,0355% a.d.u. → **taxa over = 30 × 0,0355% = 1,0637% a.m.o.** Conferência: (1,000355)^42 − 1 = 1,50% a.p. ✓
+- ⚠️ A taxa over **não** é a efetiva mensal: o "×30" é convenção (30 dias), mas a capitalização real é por **dias úteis**. Misturar dia corrido com dia útil é o erro clássico.
+
 ## Títulos públicos federais (Tesouro)
 | Título | Tipo | Indexador | Cupom | Preço |
 |---|---|---|---|---|

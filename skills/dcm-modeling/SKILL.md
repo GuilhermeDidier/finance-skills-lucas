@@ -28,8 +28,9 @@ Skill para o **mercado primário de dívida e structured finance**: como dívida
 ## Roteiro
 1. **Instrumento e estrutura:** que tipo de dívida, garantia, senioridade, covenants — `references/debt-instruments.md`.
 2. **Emissão:** rating, pricing (curva + spread), bookbuilding, sindicação — `references/issuance-process.md`.
-3. **Securitização (se aplicável):** SPV, tranches, waterfall, credit enhancement, triggers — `references/securitization-waterfall.md`.
-4. **Contexto BR:** debênture/CRI/CRA/FIDC, indexador, CVM — `references/brazilian-dcm.md`.
+3. **Securitização — lado dos ativos:** projetar o fluxo do pool (amortização − prepayment via SMM/CPR/PSA/ABS − default via CDR + recuperação com lag, severity/LGD, WAL) — `references/asset-modeling.md`.
+4. **Securitização — lado dos passivos:** SPV, tranches, waterfall, credit enhancement, triggers — `references/securitization-waterfall.md`.
+5. **Contexto BR:** debênture/CRI/CRA/FIDC, indexador, CVM — `references/brazilian-dcm.md`.
 
 ## Formato da saída
 1. **Estrutura proposta:** instrumento, prazo, garantia, senioridade, covenants.
@@ -41,6 +42,7 @@ Skill para o **mercado primário de dívida e structured finance**: como dívida
 ## Documentos de apoio
 - `references/debt-instruments.md` — espectro de dívida (CP→revolver→TLB→2nd lien→IG/HY→mezz→converts), covenants (maintenance/incurrence), senioridade/recovery.
 - `references/issuance-process.md` — papel do DCM, processo (rating→docs→roadshow→bookbuilding→pricing), spread/new-issue concession/OID, sindicação, liability management.
-- `references/securitization-waterfall.md` — SPV, asset CF, tranches, priority of payments, credit enhancement (excess spread/OC/subordinação/reserve), triggers, hedges. (Allman)
+- `references/asset-modeling.md` — modelagem do pool: amortização, prepayment (SMM/CPR/PSA/ABS), default (CDR), delinquency→default→loss→recovery (lag/severity/LGD), WAL, calibração por vintage. (Allman caps. 2–4)
+- `references/securitization-waterfall.md` — SPV, tranches, priority of payments, credit enhancement (excess spread/OC/subordinação/reserve), triggers, hedges. (Allman)
 - `references/brazilian-dcm.md` — debêntures (incentivadas), CRI/CRA, FIDC, notas comerciais, indexadores (CDI/IPCA), CVM 160/476, ANBIMA/B3.
 - `references/worked-example.md` — waterfall de uma securitização: cascata, excess spread e como a subordinação protege a sênior no estresse.
