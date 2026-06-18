@@ -1,6 +1,6 @@
 ---
 name: financial-modeling
-description: Constrói e audita modelos financeiros de 3 demonstrações (DRE, Balanço, DFC integrados) dirigidos por premissas — projeção de receita/margens, schedules de PP&E, working capital e dívida, juros e circularidade, error checks, cenários e qualidade dos lucros. Use quando o usuário quiser montar/revisar um modelo operacional, projetar demonstrações financeiras, construir schedules (depreciação, working capital, debt), resolver circularidade, fazer o balanço fechar, montar cenários/sensibilidade, ou checar a qualidade do histórico antes de projetar. Gatilhos: "modelo financeiro", "3-statement", "projeção", "DRE/balanço/DFC", "working capital", "debt schedule", "circularidade", "o balanço não fecha", "cenários", "drivers", "premissas".
+description: Constrói e audita modelos financeiros de 3 demonstrações (DRE, Balanço, DFC integrados) dirigidos por premissas — projeção de receita/margens, schedules de PP&E, working capital e dívida, juros e circularidade, error checks, cenários e qualidade dos lucros. Use quando o usuário quiser montar/revisar um modelo operacional, projetar demonstrações financeiras, construir schedules (depreciação, working capital, debt), resolver circularidade, fazer o balanço fechar, montar cenários/sensibilidade, ou checar a qualidade do histórico antes de projetar. Gatilhos: "modelo financeiro", "3-statement", "projeção", "DRE/balanço/DFC", "working capital", "debt schedule", "circularidade", "o balanço não fecha", "cenários", "drivers", "premissas", "análise de ratios", "common-size", "análise de demonstrações", "qual setor/indústria".
 ---
 
 # Financial Modeling
@@ -27,8 +27,8 @@ Skill para construir e auditar o **modelo de 3 demonstrações** — a fundaçã
 
 ## Workflow
 
-### Passo 0 — Limpar o histórico
-Antes de projetar, ajuste o histórico por não-recorrentes e cheque a **qualidade dos lucros** (ver `references/quality-of-earnings.md`): net income vs cash flow operacional, tendência de DSO/DIH, capitalização de custos. Projete sobre números **reais**, não reportados.
+### Passo 0 — Entender e limpar o histórico
+Primeiro **leia** os financials: rode common-size + ratios (liquidez, eficiência, alavancagem, rentabilidade) e confirme que o **fingerprint bate com o setor** (ver `references/financial-statement-analysis.md`). Depois ajuste o histórico por não-recorrentes e cheque a **qualidade dos lucros** (ver `references/quality-of-earnings.md`): net income vs cash flow operacional, tendência de DSO/DIH, capitalização de custos. Projete sobre números **reais**, não reportados.
 
 ### Passo 1 — Montar a estrutura
 Insira 3+ anos de histórico (DRE, balanço, DFC). Crie a aba de **premissas/drivers**. Ver arquitetura e ligações em `references/three-statement-model.md`.
@@ -61,6 +61,7 @@ Juros ↔ caixa ↔ dívida cria loop. Ative **iterative calculation** no Excel 
 Sempre mostre o balance check e explique as premissas.
 
 ## Documentos de apoio
+- `references/financial-statement-analysis.md` — ler demonstrações: common-size, as 4 famílias de ratios, e o fingerprint de setor (heurística de identificação). (Identifying Industries / Ivey-HBS)
 - `references/three-statement-model.md` — arquitetura, ligações entre as 3 demonstrações, ordem de construção, circularidade.
 - `references/projection-drivers.md` — projeção de receita, COGS/SG&A, D&A, capex, NWC (DSO/DIH/DPO, cash conversion cycle).
 - `references/debt-schedule.md` — debt schedule, juros (SOFR/fixo), cash sweep, revolver, circularidade e soluções.
