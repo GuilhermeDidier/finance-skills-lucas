@@ -11,12 +11,23 @@
 
 ## 2. Enterprise Value vs Equity Value
 ```
-Enterprise Value = Equity Value + Total Debt + Preferred + Minority Interest − Cash
+Enterprise Value = Equity Value − Cash + Debt + Preferred + Noncontrolling Interest (+ outros)
 ```
-- **Equity value:** valor para os acionistas. **EV:** valor de todo o capital (operação), independente da estrutura de capital.
-- Múltiplo com **EV** no topo → métrica **pré-juros** embaixo (Sales/EBITDA/EBIT). **Equity value** → **pós-juros** (Net Income/EPS).
-- **Por que EV não muda ao emitir dívida?** Caixa +X e dívida +X se cancelam (EV = Equity + dívida líquida). Equity value também não muda na emissão.
-- (Mecânica de fully diluted shares / TSM → skill valuation-modeling, `mechanics.md`.)
+**O que SIGNIFICAM (não a fórmula):**
+- **Equity Value** = valor de **tudo** que a empresa tem (Net Assets = Total Assets − Total Liabilities), mas só para os **acionistas** (common).
+- **Enterprise Value** = valor das **operações core** do negócio (Net Operating Assets), para **TODOS os investidores** (equity, dívida, preferred, etc.).
+- **Analogia da casa:** comprou por $500K com $100K de entrada → EV = $500K (preço total), Equity = $100K (entrada). Mudar a entrada para $250K muda o Equity, **não** o EV → EV é "capital structure-neutral".
+
+**Por que precisa dos dois:** uma metodologia produz Equity Value, outra produz EV — você tem que transitar entre eles. EV é neutro a estrutura de capital; Equity Value importa porque a maioria das valuations é da ótica do acionista.
+
+**Current vs Implied:** *Current* usa preço/share count/balanço atuais. *Implied* usa uma metodologia (ex.: DCF) para estimar o que **deveria** valer. (Casa: list price $500K = Current EV; sua estimativa $450K = Implied EV.)
+
+**Basic vs Diluted Equity Value:** Basic = shares × preço. Diluted inclui dilutivos (opções/warrants via **TSM**, converts via **if-converted**) → Diluted Shares × preço. Use o **diluted** (mede melhor o valor para os acionistas). Mecânica → skill valuation-modeling (`mechanics.md`).
+
+**Da Equity para o EV (resposta técnica):** subtraia **non-operating assets** (caixa, investimentos, equity investments/associates, assets held for sale, NOLs) e some linhas de **outros grupos de investidores** (dívida, preferred, pensão sub-financiada, **noncontrolling interest**, às vezes leases).
+- **Por que subtrair equity investments e somar NCI?** Equity investments (<50% em outra empresa) são **não-core** → subtrai (como caixa). NCI (a fatia que a controladora **não** detém numa subsidiária >50% consolidada) é **outro grupo de investidores** → soma.
+- Regra de coerência: EV no topo → métrica **pré-juros** (Sales/EBITDA/EBIT); Equity Value → **pós-juros** (Net Income/EPS).
+- **Por que EV não muda ao emitir dívida?** Caixa +X e dívida +X se cancelam. Equity value também não muda na emissão.
 
 ## 3. Efeitos no FCFF / EV / Equity (Q&A — estilo perguntas_respostas_IB)
 | Evento | FCFF | EV | Equity Value |
@@ -33,8 +44,19 @@ Enterprise Value = Equity Value + Total Debt + Preferred + Minority Interest −
 
 ## 4. Valuation — as metodologias (resumo)
 - **Trading comps, transaction comps, DCF, LBO** (floor), sum-of-the-parts. Triangule num **football field**.
-- **Qual dá o maior valor?** Em geral: **transaction comps** (incluem control premium) e **DCF** (se premissas otimistas) tendem a ser mais altos; **trading comps** e **LBO** (floor) mais baixos. Mas depende do caso.
+- **Por que valuar empresa pública** (já tem market cap)? Porque o mercado **pode estar errado** — você checa se a visão dele bate com a sua (casa de $500K que você acha que vale $450K).
+
+**Prós e contras das 3 principais:**
+| Metodologia | Prós | Contras |
+|---|---|---|
+| **Public comps** | dados de mercado reais, rápido, sem premissas de longo prazo | comps nem sempre existem; ruim p/ voláteis/ilíquidas; pode subavaliar potencial de LP |
+| **Precedent transactions** | preços reais pagos; reflete tendências da indústria | dados incompletos; deal terms/condições distorcem; comps raros |
+| **DCF** | "mais correto" na teoria; menos sujeito a oscilações de mercado; reflete fatores específicos | muito dependente de premissas de longo prazo; disputa sobre cost of equity/WACC |
+
+- **Qual dá o maior valor?** É pegadinha — depende. Resposta segura: **DCF é o mais variável** (depende das premissas); **transaction comps tendem a ser > trading comps** pelo **control premium**.
+- **Asset intensity importa:** entre duas empresas de mesmo EBITDA/crescimento, a **menos intensiva em capital** (menor capex/NWC → mais FCF) vale mais — ex.: healthcare/software > industrials.
 - DCF é primário em M&A (comps confirmam); comps são primários em IPO.
+- **Valuation muda por setor** (banco → DDM/P-BV; REIT → FFO/NAV; E&P → NAV/reserves) → ver `sector-valuation.md`.
 - Detalhe completo → skill **valuation-modeling**.
 
 ## 5. DCF (resumo)

@@ -1,6 +1,6 @@
 ---
 name: investment-banking
-description: Skill guarda-chuva de investment banking — visão geral da indústria (divisões M&A/ECM/DCM/restructuring, coverage vs product groups), processo de deal e documentos, IPO e capital markets, a base técnica canônica (3-statement linkages, EV vs equity, valuation/DCF/merger/LBO em resumo) e preparação de entrevista (fit + technical). Use quando o usuário quiser uma visão geral de IB, entender divisões/grupos, o processo de um IPO ou levantamento de capital, revisar technicals de IB, preparar entrevista (fit/behavioral), ou quando a pergunta é ampla e precisa ser roteada para a skill profunda certa. Gatilhos: "investment banking", "banco de investimento", "IPO", "capital markets", "ECM", "DCM", "coverage group", "pitchbook", "fairness opinion", "entrevista", "fit", "walk me through", "technicals", "o que faz um banqueiro".
+description: Skill guarda-chuva de investment banking — visão geral da indústria (divisões M&A/ECM/DCM/restructuring, coverage vs product groups), processo de deal e documentos, IPO e capital markets, a base técnica canônica (3-statement linkages, EV vs equity, valuation/DCF/merger/LBO em resumo) e preparação de entrevista (fit + technical). Use quando o usuário quiser uma visão geral de IB, entender divisões/grupos, o processo de um IPO ou levantamento de capital, revisar technicals de IB, preparar entrevista (fit/behavioral), ou quando a pergunta é ampla e precisa ser roteada para a skill profunda certa. Gatilhos: "investment banking", "banco de investimento", "IPO", "capital markets", "ECM", "DCM", "coverage group", "pitchbook", "fairness opinion", "entrevista", "fit", "walk me through", "technicals", "o que faz um banqueiro", "como valuar banco/REIT/petroleira/utility", "FIG", "FFO", "NAV", "P/BV", "EBITDAX", "valuation por setor".
 ---
 
 # Investment Banking
@@ -13,6 +13,7 @@ Skill **guarda-chuva** de IB: dá o contexto (o que bancos fazem, processo, capi
 - **IPO / capital markets** (ECM e DCM): como uma empresa levanta capital.
 - Revisar **technicals** de IB (accounting, EV vs equity, valuation/DCF/merger/LBO em resumo).
 - **Preparação de entrevista** (fit + technical) — lateral, PE, ou estudo.
+- **Valuation por setor** — como banco/FIG, REIT, óleo & gás, utilities e tech valuam diferente (ver `references/sector-valuation.md`).
 - **Roteamento:** quando a pergunta é ampla, identificar e apontar a skill profunda certa.
 
 ## Como esta skill se relaciona com as outras
@@ -49,5 +50,6 @@ Esta skill dá o resumo e o contexto; **mande para a skill profunda** quando o u
 ## Documentos de apoio
 - `references/overview-and-groups.md` — o que IB faz, divisões (M&A/ECM/DCM/restructuring), coverage vs product groups, sell/buy-side, players, hierarquia.
 - `references/ipo-and-capital-markets.md` — processo de IPO (bookbuilding, pricing, greenshoe, lock-up), primary vs secondary, ECM/DCM e restructuring (visão geral).
-- `references/technical-qa.md` — 3-statement linkages ($10 de depreciação), EV vs equity, efeitos no FCFF/EV/Equity, e resumo de valuation/DCF/merger/LBO com ponteiros.
+- `references/technical-qa.md` — 3-statement linkages ($10 de depreciação), EV vs equity (current/implied, non-operating, NCI, basic/diluted), efeitos no FCFF/EV/Equity, prós-contras das metodologias, resumos de DCF/merger/LBO.
+- `references/sector-valuation.md` — como a valuation muda por setor: FIG (banco/seguro: DDM, P/BV, regulatory capital), REITs (FFO/AFFO, NAV, cap rate), oil & gas (E&P NAV/EBITDAX/reserves, MLPs), utilities (rate base), tech/SaaS (ARR, Rule of 40).
 - `references/interview-and-fit.md` — fit/behavioral, "walk me through your resume", discutir deal experience, mapa de estudo técnico.
