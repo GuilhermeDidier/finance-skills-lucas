@@ -1,6 +1,6 @@
 ---
 name: corporate-finance
-description: Cobre as decisões financeiras da empresa — estrutura de capital (Modigliani-Miller, trade-off, pecking order), capital allocation (reinvestir/M&A/dividendos/buybacks/dívida), política de payout, custo de capital, criação de valor (ROIC vs WACC) e a estratégia/vantagem competitiva que sustenta o ROIC (7 Powers, barreiras de entrada, disrupção). Use quando o usuário discutir quanto endividamento ter, o que fazer com o caixa, dividendos vs recompras, se um investimento cria valor, custo de capital, ou a sustentabilidade da vantagem competitiva. Gatilhos: "estrutura de capital", "capital allocation", "alocação de capital", "dividendos", "buyback/recompra", "Modigliani-Miller", "WACC", "ROIC", "criação de valor", "vantagem competitiva", "7 powers", "moat", "pecking order", "payout".
+description: Cobre as decisões financeiras da empresa — estrutura de capital (Modigliani-Miller, trade-off, pecking order), capital allocation (reinvestir/M&A/dividendos/buybacks/dívida), política de payout, custo de capital, criação de valor (ROIC vs WACC) e a estratégia/vantagem competitiva que sustenta o ROIC (7 Powers, barreiras de entrada, disrupção). Use quando o usuário discutir quanto endividamento ter, o que fazer com o caixa, dividendos vs recompras, se um investimento cria valor, custo de capital, ou a sustentabilidade da vantagem competitiva. Gatilhos: "estrutura de capital", "capital allocation", "alocação de capital", "dividendos", "buyback/recompra", "Modigliani-Miller", "WACC", "ROIC", "NPV", "IRR", "capital budgeting", "hurdle rate", "real options", "criação de valor", "vantagem competitiva", "7 powers", "moat", "pecking order", "payout", "divestiture", "agency".
 ---
 
 # Corporate Finance
@@ -25,6 +25,7 @@ Skill para as grandes decisões financeiras da empresa: **como financiar, o que 
 6. **Disciplina de alocação** — zero-based, sair de negócios que não criam valor, agir no gap preço/valor.
 
 ## Roteiro de análise
+0. **Avaliar um investimento/projeto específico:** régua NPV (> 0), com hurdle rate ajustado ao risco do projeto, e a fonte de valor (vantagem competitiva); considere real options se houver flexibilidade (`references/capital-budgeting.md`).
 1. **Diagnóstico de valor:** a empresa gera ROIC > WACC? Subindo/caindo? (ver `../valuation-modeling/references/value-drivers.md`).
 2. **Sustentabilidade:** que Power/barreira sustenta o ROIC? É frágil a disrupção? (`references/strategy-and-power.md` e `../valuation-modeling/references/moat.md`).
 3. **Estrutura de capital:** está perto da ótima? Debt capacity, coverage, rating? (`references/capital-structure.md`).
@@ -41,6 +42,7 @@ Skill para as grandes decisões financeiras da empresa: **como financiar, o que 
 Sempre quantifique a criação de valor (economic profit / NPV) e seja explícito sobre premissas.
 
 ## Documentos de apoio
+- `references/capital-budgeting.md` — avaliação de investimentos: NPV (régua de ouro), IRR/payback/PI/MIRR e armadilhas, hurdle rate por risco, real options, e por que NPV>0 exige vantagem competitiva. (Strategic Issues / Shapiro)
 - `references/capital-structure.md` — Modigliani-Miller (I/II, com impostos), trade-off, custos de distress, pecking order, estrutura ótima/WACC. (Strategic Issues + McKinsey)
 - `references/capital-allocation.md` — o menu de usos do caixa, régua ROIC vs WACC, 5 princípios, disciplina de buyback. (Mauboussin Capital Allocation + McKinsey)
 - `references/payout-policy.md` — dividend irrelevance (MM), Gordon, Lintner (smoothing), dividendos vs buybacks, sinalização e impostos.

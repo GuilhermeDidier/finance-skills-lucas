@@ -32,6 +32,16 @@ A decisão é sempre comparativa: **aloque para o uso de maior valor presente aj
 - **Na prática diferem por:** impostos (timing/clientela), sinalização, e — crucial — buyback só agrega se a ação está barata, enquanto dividendo é neutro a preço.
 - Ver `payout-policy.md`.
 
-## Por que a alocação costuma ser ruim (e como avaliar)
-- **Inércia** (repetir o ano anterior) e **incentivos** (compensação ligada a tamanho/EPS, mimetismo) degradam a alocação.
-- **Para avaliar a gestão:** olhe o histórico de alocação (capex, M&A, dividendos, buybacks) ao longo de anos vs o ROIC gerado e o preço×valor nas recompras. Morningstar publica "Capital Allocation Rating".
+## Divestitures (o uso esquecido)
+Sair de negócios que valem mais para outros é **alocação de capital ao contrário** — e cria valor que executivos costumam ignorar (acham menos "empolgante" que aquisições).
+- Venda/spin-off de divisões non-core libera capital e foco; o comprador certo paga mais (sinergias/fit).
+- Princípio #4 dos 5: **disposição de sair** de negócios que não criam valor. Combate o "diworsification" e o desconto de conglomerado.
+
+## Agência e free cash flow (por que a alocação degrada)
+- **Teoria de agência (Jensen):** gestores tendem a **reter e reinvestir** caixa (crescer o império) mesmo sem projetos com ROIC > WACC, porque tamanho traz poder/remuneração. Caixa ocioso (free cash flow) é tentação para M&A que destrói valor.
+- **Dívida e payout como disciplina:** comprometer caixa com juros/dividendos **reduz** o caixa discricionário e força disciplina (menos "empire building").
+- **Incentivos:** compensação ligada a tamanho/EPS, e o **mimetismo** (copiar peers) degradam a alocação.
+
+## Como avaliar a gestão
+- Olhe o **histórico de alocação** (capex, M&A, dividendos, buybacks, divestitures) ao longo de anos vs o **ROIC gerado** e o **preço×valor nas recompras**. Morningstar publica "Capital Allocation Rating".
+- Checklist dos 5 princípios + a régua: o caixa foi para os usos de maior valor, ou para crescer/imitar?
