@@ -33,6 +33,7 @@ Para desinstalar: `./install.sh --uninstall`.
 | `bond-modeling` | Analytics de renda fixa: precificação, YTM, duration/DV01/convexidade, curva e crédito, instrumentos BR (LTN/NTN-B/CDI/DI futuro) | renda fixa, título, YTM, duration, DV01, curva de juros, LTN, NTN-B, CDI, marcação a mercado |
 | `dcm-modeling` | Mercado de dívida: instrumentos e covenants, emissão (rating/pricing/sindicação), securitização (tranches/waterfall/credit enhancement), DCM brasileiro (debênture/CRI/CRA/FIDC) | DCM, emissão de dívida, debênture, high yield, covenants, securitização, waterfall, tranche, FIDC |
 | `derivatives-modeling` | Forwards/futuros (DI/dólar/cupom cambial), opções (Black-Scholes/Greeks/put-call parity), swaps (IRS/CDS) e hedge, foco B3 | derivativo, futuro, opção, Black-Scholes, Greeks, delta, swap, hedge, DI futuro, volatilidade |
+| `powerpoint-for-ib` | Pitchbooks no padrão de banco: estrutura, action titles, formatação (banker blue), exhibits (football field/S&U), think-cell e quality check | pitchbook, slide, PowerPoint, action title, football field, exhibit, think-cell, formatar slide |
 
 ## Como criar uma nova skill
 
