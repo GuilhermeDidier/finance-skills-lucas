@@ -2,7 +2,7 @@
 
 **Skills de Claude Code para Investment Banking & Mercado Financeiro — feitas sob medida para o Lucas.**
 
-Um conjunto de **10 skills** que dão ao Claude Code conhecimento profundo, em nível de banco, para te ajudar no dia a dia: valuation, modelagem, M&A, LBO, corporate finance, renda fixa, derivativos e pitchbooks. Cada skill foi destilada de fontes de referência do mercado (Rosenbaum, McKinsey, Damodaran, Mauboussin, JP Morgan, Credit Suisse, Securato, entre outras) e adaptada ao **contexto brasileiro** onde faz sentido (DU/252, CDI/Selic, NTN-B, debêntures, cupom cambial).
+Um conjunto de **12 skills** que dão ao Claude Code conhecimento profundo, em nível de banco, para te ajudar no dia a dia: valuation, modelagem, M&A, LBO, corporate finance, renda fixa, derivativos, pitchbooks e — agora — **macroeconomia e econometria aplicada**. Cada skill foi destilada de fontes de referência do mercado (Rosenbaum, McKinsey, Damodaran, Mauboussin, JP Morgan, Credit Suisse, Securato, entre outras) e adaptada ao **contexto brasileiro** onde faz sentido (DU/252, CDI/Selic, NTN-B, debêntures, cupom cambial, Copom/IPCA/curva DI).
 
 ---
 
@@ -32,12 +32,14 @@ As skills **disparam sozinhas** quando você fala do assunto. Não precisa decor
 > *"Qual o IRR de um buyout a 8x com 5x de dívida?"* → dispara `lbo-modeling`
 > *"Precifica uma NTN-B e me dá a duration"* → dispara `bond-modeling`
 > *"Monta o football field desse pitch"* → dispara `powerpoint-for-ib`
+> *"Roda um VAR de Selic, IPCA e câmbio e me mostra a resposta a um choque de juros"* → dispara `macroeconomics`
+> *"Quero estimar o efeito dessa política com um DiD, clusterizando por estado"* → dispara `econometrics`
 
 Cada skill tem um `SKILL.md` (o cérebro: quando agir + o passo a passo) e arquivos em `references/` (o conhecimento denso: fórmulas, exemplos resolvidos). O Claude carrega as referências só quando precisa.
 
 ---
 
-## 📚 As 10 skills
+## 📚 As 12 skills
 
 ### 🎯 Avaliação & Modelagem
 | Skill | O que faz | Fontes |
@@ -65,6 +67,12 @@ Cada skill tem um `SKILL.md` (o cérebro: quando agir + o passo a passo) e arqui
 | **investment-banking** | Visão geral (divisões/grupos), IPO e capital markets, technicals canônicos (3-statement, EV vs equity), valuation por setor (FIG/REIT/oil&gas), mental math, prep de entrevista — e **roteia** para as skills profundas | 400 Questions, M&I 400, Credit Suisse |
 | **powerpoint-for-ib** | Pitchbooks no padrão de banco: estrutura, action titles, formatação (banker blue), exhibits (football field/sources & uses/etc.), think-cell e quality check | Craft de IB |
 
+### 📈 Economia & Econometria
+| Skill | O que faz | Fontes |
+|-------|-----------|--------|
+| **macroeconomics** | Frameworks macro (AD-AS, IS-LM, Mundell-Fleming, modelo NK 3-equações, Phillips, Taylor, Solow, fiscal/dívida), séries temporais (estacionariedade, ARIMA, **VAR/SVAR, cointegração/VECM**, IRF, local projections, nowcasting, previsão validada OOS), dados (FRED/World Bank/IMF + BCB-SGS/IBGE-SIDRA/IPEADATA), com forte contexto BR (Copom/Selic, IPCA, câmbio, curva DI, dominância fiscal). Worked-example rodado com **dado real do BCB** | Blanchard, Carlin-Soskice, Hamilton, Enders, Lütkepohl, RPM/atas BCB |
+| **econometrics** | Estimação e inferência (OLS/GLS, SE robustos/clusterizados, bad controls), **inferência causal** (DiD/event study + Bacon/Callaway-Sant'Anna, IV/weak-IV, RDD, controle sintético, matching/DML), painel (FE/RE/Mundlak, Arellano-Bond), variáveis dependentes limitadas (logit/probit/Tobit/Heckman), diagnósticos e implementação em R (`fixest`)/Python (`linearmodels`)/Stata (`reghdfe`). DiD **validado em código** | Wooldridge, Angrist-Pischke, Cunningham (Mixtape), Cameron-Trivedi |
+
 ---
 
 ## 🔗 As skills conversam entre si
@@ -90,7 +98,7 @@ finance-skills-lucas/
 │   │   ├── SKILL.md          ← quando agir + workflow
 │   │   └── references/       ← fórmulas, exemplos resolvidos
 │   ├── financial-modeling/
-│   └── ... (10 skills)
+│   └── ... (12 skills)
 └── _TEMPLATE/           ← modelo para criar novas skills
 ```
 
